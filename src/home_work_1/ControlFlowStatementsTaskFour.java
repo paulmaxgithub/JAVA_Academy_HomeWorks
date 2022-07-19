@@ -3,6 +3,7 @@ package home_work_1;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.text.DecimalFormat;
+import java.util.Calendar;      //task_4.6
 
 public class ControlFlowStatementsTaskFour {
 
@@ -10,20 +11,20 @@ public class ControlFlowStatementsTaskFour {
     //please, just enter the data by executing commands from the console
     public static void main(String[] args) {
 
-//        //create instance of class OddNumber & call public method
-//        //enter ONE number in console & get result
-//        OddNumber task_4_1 = new OddNumber();
-//        task_4_1.defineOddNumber();
-//
-//        //create instance of class AverageNumber & call public method
-//        //enter THREE different numbers in console  & get result
-//        AverageNumber task_4_2 = new AverageNumber();
-//        task_4_2.findAverageNumber();
-//
-//        //create instance of class DivisibleNumbers & call public method
-//        //enter TWO numbers in console
-//        DivisibleNumbers task_4_3 = new DivisibleNumbers();
-//        task_4_3.checkDivisibleNumbers();
+        //create instance of class OddNumber & call public method
+        //enter ONE number in console & get result
+        OddNumber task_4_1 = new OddNumber();
+        task_4_1.defineOddNumber();
+
+        //create instance of class AverageNumber & call public method
+        //enter THREE different numbers in console  & get result
+        AverageNumber task_4_2 = new AverageNumber();
+        task_4_2.findAverageNumber();
+
+        //create instance of class DivisibleNumbers & call public method
+        //enter TWO numbers in console
+        DivisibleNumbers task_4_3 = new DivisibleNumbers();
+        task_4_3.checkDivisibleNumbers();
 
         //create instance of class ByteToKiloByteConverter
         //call two public method to convert
@@ -37,8 +38,10 @@ public class ControlFlowStatementsTaskFour {
         CheckLetterManager task_4_5 = new CheckLetterManager();
         task_4_5.inputLetter();
 
-        //task_4_6
-        //
+        //create instance of class LeapYearManager & call public method
+        //enter number of year & determine what is the year
+        LeapYearManager task_4_6 = new LeapYearManager();
+        task_4_6.determineLeapYear();
     }
 }
 
@@ -67,7 +70,7 @@ class OddNumber {
             System.out.println("Current Integer " + currentValue + " is odd");
         }
 
-        System.out.println("--------------------------");
+        System.out.println("-------------DONE-------------");
     }
 
     //Check the entered value is an integer or not
@@ -116,7 +119,7 @@ class AverageNumber {
 
         sortThreeNumbers(integersArray);
 
-        System.out.println("--------------------------");
+        System.out.println("-------------DONE-------------");
     }
 
     //Check the entered value is an integer or not
@@ -170,7 +173,7 @@ class DivisibleNumbers {
 
         divideTwoNumbers(integersArray);
 
-        System.out.println("--------------------------");
+        System.out.println("-------------DONE-------------");
     }
 
     //Check the entered value is an integer or not
@@ -281,7 +284,7 @@ class ByteToKilobyteConverter {
         kilobytesNumber = 0;
         bytesNumber = 0;
 
-        System.out.println("--------------------------");
+        System.out.println("-------------DONE-------------");
     }
 
     private boolean checkScannerValueForKilobytes(Scanner scannerValue) {
@@ -308,7 +311,7 @@ class CheckLetterManager {
             isLetter = checkInputValueIsLetter(scannerValue);
         }
 
-        System.out.println("--------------------------");
+        System.out.println("-------------DONE-------------");
     }
 
     //Check the entered value
@@ -331,10 +334,57 @@ class CheckLetterManager {
     }
 }
 
-//// TASK 4.6 ------------------------------------------------------------------
-//class LeapYearManager {
-//
-//    public void determineLeapYear() {
-//
-//    }
-//}
+// TASK 4.6 ------------------------------------------------------------------
+class LeapYearManager {
+
+    private int validEnteredYear;
+
+    /*
+        as an experiment, the value of the year will be valid from 1800 to 2100
+     */
+    public void determineLeapYear() {
+
+        boolean isValidYearNumber = false;
+        boolean isLeapEnteredYear = false;
+
+        System.out.println("Leap Year - Task 4.6");
+        System.out.println("Please enter a year number to see if this year is a leap year");
+
+        while (!isValidYearNumber) {
+            Scanner scannerValue = new Scanner(System.in);
+            isValidYearNumber = checkYearNumber(scannerValue);
+            if (isValidYearNumber) {
+                isLeapEnteredYear = isLeapYear(validEnteredYear);
+            }
+        }
+
+        if (isLeapEnteredYear) {
+            System.out.println(validEnteredYear + " year is leap year");
+        } else {
+            System.out.println(validEnteredYear + " year is not leap year");
+        }
+
+        System.out.println("-------------DONE-------------");
+    }
+
+    private boolean isLeapYear(int year) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.YEAR, year);
+        return calendar.getActualMaximum(Calendar.DAY_OF_YEAR) > 365;
+    }
+
+    private boolean checkYearNumber(Scanner scannerValue) {
+        if (scannerValue.hasNextInt()) {
+            validEnteredYear = scannerValue.nextInt();
+            if ((validEnteredYear >= 1800) && (validEnteredYear <= 2100)) {
+                return true;
+            } else {
+                System.out.println("Please enter valid value. It will be valid from 1800 to 2100");
+                return false;
+            }
+        } else {
+            System.out.println("You've entered not a year number");
+            return false;
+        }
+    }
+}
