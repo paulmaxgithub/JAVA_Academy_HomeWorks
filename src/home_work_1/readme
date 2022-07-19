@@ -7,4 +7,5 @@ TASK 4 - class ControlFlowStatementsTaskFour{}
 • 4.1 - class OddNumber{}
 • 4.2 - class AverageNumber{}
 • 4.3 - class DivisibleNumbers{}
+• 4.4 - class ByteToKilobyteConverter{}
 • 4.5 - class CheckLetterManager{}
