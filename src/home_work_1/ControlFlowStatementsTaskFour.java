@@ -2,28 +2,35 @@ package home_work_1;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class ControlFlowStatementsTaskFour {
 
+    //All functions are performed automatically,
+    //please, just enter the data by executing commands from the console
     public static void main(String[] args) {
 
-        //create instance of class OddNumber & call public method
-        //enter ONE number in console & get result
-        OddNumber task_4_1 = new OddNumber();
-        task_4_1.defineOddNumber();
+//        //create instance of class OddNumber & call public method
+//        //enter ONE number in console & get result
+//        OddNumber task_4_1 = new OddNumber();
+//        task_4_1.defineOddNumber();
+//
+//        //create instance of class AverageNumber & call public method
+//        //enter THREE different numbers in console  & get result
+//        AverageNumber task_4_2 = new AverageNumber();
+//        task_4_2.findAverageNumber();
+//
+//        //create instance of class DivisibleNumbers & call public method
+//        //enter TWO numbers in console
+//        DivisibleNumbers task_4_3 = new DivisibleNumbers();
+//        task_4_3.checkDivisibleNumbers();
 
-        //create instance of class AverageNumber & call public method
-        //enter THREE different numbers in console  & get result
-        AverageNumber task_4_2 = new AverageNumber();
-        task_4_2.findAverageNumber();
-
-        //create instance of class DivisibleNumbers & call public method
-        //enter TWO numbers in console
-        DivisibleNumbers task_4_3 = new DivisibleNumbers();
-        task_4_3.checkDivisibleNumbers();
-
-        //task_4_4
-        //
+        //create instance of class ByteToKiloByteConverter
+        //call two public method to convert
+        //first method converts bytes to kilobytes
+        ByteToKilobyteConverter task_4_4 = new ByteToKilobyteConverter();
+        task_4_4.convertBytesTo_Kilobytes();
+        task_4_4.convertKilobytesTo_Bytes();
 
         //create instance of class CheckLetterManager & call public method
         //enter letters or another symbols in console
@@ -35,7 +42,7 @@ public class ControlFlowStatementsTaskFour {
     }
 }
 
-// TASK 4.1
+// TASK 4.1 ------------------------------------------------------------------
 class OddNumber {
 
     public void defineOddNumber() {
@@ -74,7 +81,7 @@ class OddNumber {
     }
 }
 
-// TASK 4.2
+// TASK 4.2 ------------------------------------------------------------------
 class AverageNumber {
 
     //Get two entered number from console
@@ -131,7 +138,7 @@ class AverageNumber {
     }
 }
 
-// TASK 4.3
+// TASK 4.3 ------------------------------------------------------------------
 class DivisibleNumbers {
 
     public void checkDivisibleNumbers() {
@@ -196,19 +203,98 @@ class DivisibleNumbers {
     }
 }
 
-//// TASK 4.4
-//class ByteToKiloByteConverter {
-//
-//    public void convertBytesTo_KB() {
-//
-//    }
-//
-//    public void convertKBToBytes() {
-//
-//    }
-//}
+// TASK 4.4 ------------------------------------------------------------------
+class ByteToKilobyteConverter {
 
-// TASK 4.5
+    final private int bytesInKilobytes = 1024;
+    final private DecimalFormat df = new DecimalFormat("0.00");
+    private boolean isValidNumber = false;
+    private double kilobytesNumber;
+    private long bytesNumber;
+
+
+    //method to convert bytes to kilobytes
+    public void convertBytesTo_Kilobytes() {
+
+
+        System.out.println("Convert bytes to Kilobytes & Kilobytes top bytes - task 4.4");
+        System.out.println("***");
+
+        System.out.println("Please enter number in bytes");
+
+        while (!isValidNumber) {
+            Scanner scannerValue = new Scanner(System.in);
+            isValidNumber = checkScannerValueForBytes(scannerValue);
+
+            if (isValidNumber) {
+                bytesNumber = scannerValue.nextLong();
+            }
+        }
+
+        kilobytesNumber = bytesNumber * 1.0 / bytesInKilobytes;
+
+        //Show result after converting values for different states
+        if (kilobytesNumber == Math.round(kilobytesNumber)) {
+            int intRoundedResult = (int) kilobytesNumber;
+            System.out.println(bytesNumber + " bytes equal - " + intRoundedResult + "Kb");
+        } else {
+            System.out.println(bytesNumber + " bytes equal - " + df.format(kilobytesNumber) + "Kb");
+        }
+
+        isValidNumber = false;
+        kilobytesNumber = 0;
+        bytesNumber = 0;
+    }
+
+    private boolean checkScannerValueForBytes(Scanner scannerValue) {
+        if (!scannerValue.hasNextInt()) {
+            System.out.println("You've entered not valid number!");
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    //method to convert kilobytes to bytes
+    public void convertKilobytesTo_Bytes() {
+
+        System.out.println("Please enter number in Kilobytes");
+
+        while (!isValidNumber) {
+            Scanner scannerValue = new Scanner(System.in);
+            isValidNumber = checkScannerValueForKilobytes(scannerValue);
+
+            if (isValidNumber) {
+                kilobytesNumber = scannerValue.nextDouble();
+            }
+        }
+
+        if (kilobytesNumber == Math.round(kilobytesNumber)) {
+            bytesNumber = (long) kilobytesNumber * bytesInKilobytes;
+            System.out.println((int) kilobytesNumber + "Kb equals " + bytesNumber + " bytes");
+        } else {
+            bytesNumber = Math.round(kilobytesNumber * bytesInKilobytes);
+            System.out.println(kilobytesNumber + "Kb equals " + bytesNumber + " bytes");
+        }
+
+        isValidNumber = false;
+        kilobytesNumber = 0;
+        bytesNumber = 0;
+
+        System.out.println("--------------------------");
+    }
+
+    private boolean checkScannerValueForKilobytes(Scanner scannerValue) {
+        if (!scannerValue.hasNextInt() && !scannerValue.hasNextDouble()) {
+            System.out.println("You've entered not number!");
+            return false;
+        } else {
+            return true;
+        }
+    }
+}
+
+// TASK 4.5 ------------------------------------------------------------------
 class CheckLetterManager {
 
     public void inputLetter() {
@@ -245,7 +331,7 @@ class CheckLetterManager {
     }
 }
 
-//// TASK 4.6
+//// TASK 4.6 ------------------------------------------------------------------
 //class LeapYearManager {
 //
 //    public void determineLeapYear() {
