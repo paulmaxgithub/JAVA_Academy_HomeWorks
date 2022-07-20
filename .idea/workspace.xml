@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e81c2fa4-f2e8-4fae-a421-efa7fc739d62" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/home_work_1/NameManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home_work_1/ControlFlowStatementsTaskFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home_work_1/ControlFlowStatementsTaskFour.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +43,9 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.home_work_1.ControlFlowStatementsTaskFour">
-    <configuration name="BitwizeOperatorsTaskOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="home_work_1.BitwizeOperatorsTaskOne" />
+  <component name="RunManager" selected="Application.TestCase_3">
+    <configuration name="NameManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="home_work_1.NameManager" />
       <module name="HomeWork" />
       <extension name="coverage">
         <pattern>
@@ -57,8 +57,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathLibraryTaskThree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="home_work_1.MathLibraryTaskThree" />
+    <configuration name="TestCase_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="home_work_1.TestCase_2" />
       <module name="HomeWork" />
       <extension name="coverage">
         <pattern>
@@ -70,8 +70,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OperatorsPriorityTaskTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="home_work_1.OperatorsPriorityTaskTwo" />
+    <configuration name="TestCase_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="home_work_1.TestCase_3" />
       <module name="HomeWork" />
       <extension name="coverage">
         <pattern>
@@ -96,10 +96,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="home_work_1.TestCase_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="home_work_1.TestCase_1" />
+      <module name="HomeWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="home_work_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestCase_3" />
+        <item itemvalue="Application.TestCase_2" />
+        <item itemvalue="Application.home_work_1.TestCase_1" />
+        <item itemvalue="Application.NameManager" />
         <item itemvalue="Application.home_work_1.ControlFlowStatementsTaskFour" />
-        <item itemvalue="Application.MathLibraryTaskThree" />
       </list>
     </recent_temporary>
   </component>
