@@ -134,7 +134,7 @@ class AverageNumber {
 
     //Sort numbers in array
     private static void sortThreeNumbers(int[] unsortedArray) {
-        int[] sortedArray = {};
+        int[] sortedArray;
         Arrays.sort(unsortedArray);
         sortedArray = unsortedArray;
         System.out.println("Average number is " + sortedArray[1]);
@@ -153,22 +153,21 @@ class DivisibleNumbers {
         int[] integersArray = new int[2];
 
         while (!isNumeric) {
+            Scanner scannerNumber = new Scanner(System.in);
             if (numberOfEnteredValues == 0) {
                 System.out.println("Please, Enter first number...");
             } else {
                 System.out.println("Please, Enter second number...");
             }
 
-            Scanner scannerNumber = new Scanner(System.in);
             isNumeric = checkInputValueIsInteger(scannerNumber);
 
             if (isNumeric) {
                 int currentEnteredValue = scannerNumber.nextInt();
                 integersArray[numberOfEnteredValues] = currentEnteredValue;
+                numberOfEnteredValues++;
+                isNumeric = numberOfEnteredValues == 2;
             }
-
-            numberOfEnteredValues++;
-            isNumeric = numberOfEnteredValues == 2;
         }
 
         divideTwoNumbers(integersArray);
