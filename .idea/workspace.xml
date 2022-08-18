@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e81c2fa4-f2e8-4fae-a421-efa7fc739d62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/home_work_2/loops/Task_1_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_2/loops/Task_1_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,13 +43,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Task_1_1">
-    <configuration name="NameManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="home_work_1.NameManager" />
+  <component name="RunManager" selected="Application.Task_1_2">
+    <configuration name="Task_1_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="home_work_2.loops.Task_1_1" />
       <module name="HomeWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="home_work_1.*" />
+          <option name="PATTERN" value="home_work_2.loops.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -57,8 +57,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task_1_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="home_work_2.loops.Task_1_1" />
+    <configuration name="Task_1_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="home_work_2.loops.Task_1_2" />
       <module name="HomeWork" />
       <extension name="coverage">
         <pattern>
@@ -111,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task_1_2" />
         <item itemvalue="Application.Task_1_1" />
         <item itemvalue="Application.TestCase_3" />
         <item itemvalue="Application.TestCase_2" />
         <item itemvalue="Application.home_work_1.TestCase_1" />
-        <item itemvalue="Application.NameManager" />
       </list>
     </recent_temporary>
   </component>
