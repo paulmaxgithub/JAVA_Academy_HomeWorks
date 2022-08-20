@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e81c2fa4-f2e8-4fae-a421-efa7fc739d62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/home_work_2/loops/Task_1_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_2/loops/Task_1_6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home_work_2/loops/readme" beforeDir="false" afterPath="$PROJECT_DIR$/src/home_work_2/loops/readme" afterDir="false" />
     </list>
@@ -44,7 +44,7 @@
     "settings.editor.selected.configurable": "preferences.toDoOptions"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Task_1_5">
+  <component name="RunManager" selected="Application.Task_1_6">
     <configuration name="Task_1_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="home_work_2.loops.Task_1_1" />
       <module name="HomeWork" />
@@ -97,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCase_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="home_work_1.TestCase_3" />
+    <configuration name="Task_1_6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="home_work_2.loops.Task_1_6" />
       <module name="HomeWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="home_work_1.*" />
+          <option name="PATTERN" value="home_work_2.loops.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task_1_6" />
         <item itemvalue="Application.Task_1_5" />
         <item itemvalue="Application.Task_1_3" />
         <item itemvalue="Application.Task_1_2" />
         <item itemvalue="Application.Task_1_1" />
-        <item itemvalue="Application.TestCase_3" />
       </list>
     </recent_temporary>
   </component>
@@ -155,5 +155,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HomeWork$Task_1_6.ic" NAME="Task_1_6 Coverage Results" MODIFIED="1660991310528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>home_work_2.loops.*</FILTER>
+    </SUITE>
   </component>
 </project>
