@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e81c2fa4-f2e8-4fae-a421-efa7fc739d62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/home_work_2/arrays/ArraysIteration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_2/arrays/ArraysAdditionalTasks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home_work_2/arrays/readme" beforeDir="false" afterPath="$PROJECT_DIR$/src/home_work_2/arrays/readme" afterDir="false" />
     </list>
@@ -50,7 +50,20 @@
       <recent name="$PROJECT_DIR$/src/home_work_2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ArraysIteration">
+  <component name="RunManager" selected="Application.ArraysAdditionalTasks">
+    <configuration name="ArraysAdditionalTasks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="home_work_2.arrays.ArraysAdditionalTasks" />
+      <module name="HomeWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="home_work_2.arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArraysIteration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="home_work_2.arrays.ArraysIteration" />
       <module name="HomeWork" />
@@ -90,19 +103,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task_1_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="home_work_2.loops.Task_1_5" />
-      <module name="HomeWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="home_work_2.loops.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Task_1_6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="home_work_2.loops.Task_1_6" />
       <module name="HomeWork" />
@@ -118,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArraysAdditionalTasks" />
+        <item itemvalue="Application.Task_1_6" />
         <item itemvalue="Application.ArraysIteration" />
         <item itemvalue="Application.ArraysUtils" />
         <item itemvalue="Application.Task_1_1" />
-        <item itemvalue="Application.Task_1_6" />
-        <item itemvalue="Application.Task_1_5" />
       </list>
     </recent_temporary>
   </component>
