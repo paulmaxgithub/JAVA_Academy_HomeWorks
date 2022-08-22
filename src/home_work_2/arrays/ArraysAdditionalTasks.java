@@ -64,7 +64,7 @@ public class ArraysAdditionalTasks {
                 System.out.print(element + " ");
             }
         }
-        System.out.println("");
+        System.out.println(" ");
         System.out.println("——————————————————————————————————————————————————————");
     }
 
