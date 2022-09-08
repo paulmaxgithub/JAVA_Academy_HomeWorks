@@ -21,8 +21,8 @@ public class WithoutCalculatorMain {
         // STEP 5. - result of STEP 4. + 4.1
         result = add(result, 4.1);
 
-        //SHOW RESULT
-        System.out.println(round(result, 2));
+        //SHOW RESULT (= 116.1)
+        System.out.println(round(result, 0));
     }
 
     private static double add(double a, double b) { return a + b; }
