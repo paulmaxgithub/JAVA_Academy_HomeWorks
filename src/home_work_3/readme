@@ -2,3 +2,4 @@
 
 TASK 1 - class WithoutCalculatorMain {}
 TASK 2 - class CalculatorWithOperatorMain {}, CalculatorWithOperator {}
+TASK 3 - class CalculatorWithMathCopyMain {}, CalculatorWithMathCopy {}

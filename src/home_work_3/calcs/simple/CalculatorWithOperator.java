@@ -7,9 +7,6 @@ public class CalculatorWithOperator {
     //addition
     public double add(double a, double b) { return a + b; }
 
-    //subtraction
-    public double subtract(double a, double b) { return a - b; }
-
     //multiplication
     public double multiply(double a, double b) { return a * b; }
 
@@ -17,7 +14,13 @@ public class CalculatorWithOperator {
     public double divide(double a, double b) { return a / b; }
 
     //exponentiation
-    public double exponentiate(double number, int exp) { return (int)number ^ exp; }
+    public double exponentiate(double number, int exp) {
+        for (int i = 1; i < exp; i++) {
+            number *= number;
+        }
+        WithoutCalculatorMain.round(number, 2);
+        return number;
+    }
 
     //taking the square root
     public double squareRoot(double ofNumber) {

@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e81c2fa4-f2e8-4fae-a421-efa7fc739d62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/home_work_3/runners/CalculatorWithOperatorMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_3/calcs/simple/CalculatorWithMathCopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_3/runners/CalculatorWithMathCopyMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home_work_3/calcs/simple/CalculatorWithOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home_work_3/calcs/simple/CalculatorWithOperator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home_work_3/readme" beforeDir="false" afterPath="$PROJECT_DIR$/src/home_work_3/readme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home_work_3/runners/WithoutCalculatorMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home_work_3/runners/WithoutCalculatorMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home_work_3/runners/CalculatorWithOperatorMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home_work_3/runners/CalculatorWithOperatorMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,7 @@
       <recent name="$PROJECT_DIR$/src/home_work_2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CalculatorWithOperatorMain">
+  <component name="RunManager" selected="Application.CalculatorWithMathCopyMain">
     <configuration name="ArraysAdditionalTasks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="home_work_2.arrays.ArraysAdditionalTasks" />
       <module name="HomeWork" />
@@ -70,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArraysIteration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="home_work_2.arrays.ArraysIteration" />
+    <configuration name="CalculatorWithMathCopyMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="home_work_3.runners.CalculatorWithMathCopyMain" />
       <module name="HomeWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="home_work_2.arrays.*" />
+          <option name="PATTERN" value="home_work_3.runners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CalculatorWithMathCopyMain" />
         <item itemvalue="Application.CalculatorWithOperatorMain" />
         <item itemvalue="Application.WithoutCalculatorMain" />
         <item itemvalue="Application.ArraysAdditionalTasks" />
         <item itemvalue="Application.Task_1_6" />
-        <item itemvalue="Application.ArraysIteration" />
       </list>
     </recent_temporary>
   </component>
